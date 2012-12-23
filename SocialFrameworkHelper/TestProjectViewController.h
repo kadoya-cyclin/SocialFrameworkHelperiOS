@@ -1,5 +1,5 @@
 //
-// AppDelegate.h
+// TestProjectViewController.h
 // SocialFrameworkHelper
 //
 // Copyright (c) 2012 Shota Kondou, Cyclin. and FOU.Inc.
@@ -25,9 +25,16 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import "SocialFrameworkHelper.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface TestProjectViewController : UIViewController<SocialFrameworkHelperDelegate, UIWebViewDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIButton *twitterButton;
+@property (weak, nonatomic) IBOutlet UIButton *facebookButton;
 
+@property(nonatomic, strong) SocialFrameworkHelper *socialFrameworkHelper;
+
+- (IBAction)twitterButtonPushed:(id)sender;
+- (IBAction)facebookButtonPushed:(id)sender;
 @end

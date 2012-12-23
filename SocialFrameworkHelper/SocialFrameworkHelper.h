@@ -1,5 +1,5 @@
 //
-// AppDelegate.h
+// SocialFrameworkHelper.h
 // SocialFrameworkHelper
 //
 // Copyright (c) 2012 Shota Kondou, Cyclin. and FOU.Inc.
@@ -24,10 +24,30 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@protocol SocialFrameworkHelperDelegate;
 
-@property (strong, nonatomic) UIWindow *window;
+@interface SocialFrameworkHelper : NSObject
 
++(SocialFrameworkHelper *)sharedHelper;
+
+// Send Your Setting Data
+-(UIViewController *)postTwitterText:(NSString *)postText withURL:(NSURL *)postURL withMedia:(UIImage *)postImage;
+-(UIViewController *)postFacebookText:(NSString *)postText withURL:(NSURL *)postURL withMedia:(UIImage *)postImage;
+
+// Send WebView's Data
+-(UIViewController *)postWebViewDataToTwitter:(UIWebView *)webView;
+-(UIViewController *)postWebViewDataToFacebook:(UIWebView *)webView;
+
+// Delegate Object
+@property(nonatomic, weak) id <SocialFrameworkHelperDelegate> delegate;
+
+@end
+
+@protocol SocialFrameworkHelperDelegate <NSObject>
+-(void)socialFWHTwitterPostDone:(SocialFrameworkHelper *)socialFrameworkHelper;
+-(void)socialFWHTwitterPostCanceled:(SocialFrameworkHelper *)socialFrameworkHelper;
+-(void)socialFWHFacebookPostDone:(SocialFrameworkHelper *)socialFrameworkHelper;
+-(void)socialFWHFacebookPostCanceled:(SocialFrameworkHelper *)socialFrameworkHelper;
 @end

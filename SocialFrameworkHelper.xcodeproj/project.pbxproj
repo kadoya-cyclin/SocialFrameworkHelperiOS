@@ -16,6 +16,12 @@
 		80B8C60016872A8D0079E523 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 80B8C5FF16872A8D0079E523 /* Default.png */; };
 		80B8C60216872A8D0079E523 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80B8C60116872A8D0079E523 /* Default@2x.png */; };
 		80B8C60416872A8D0079E523 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80B8C60316872A8D0079E523 /* Default-568h@2x.png */; };
+		80B8C60C16872B0B0079E523 /* SocialFrameworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B8C60B16872B0B0079E523 /* SocialFrameworkHelper.m */; };
+		80B8C63916872D9C0079E523 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B8C63816872D9C0079E523 /* Twitter.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		80B8C63B16872DA30079E523 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B8C63A16872DA30079E523 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		80B8C63F168745520079E523 /* TestProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B8C63D168745520079E523 /* TestProjectViewController.m */; };
+		80B8C640168745520079E523 /* TestProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B8C63E168745520079E523 /* TestProjectViewController.xib */; };
+		80B8C64216874FC90079E523 /* TestProjectViewControlleriPhone4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B8C64116874FC90079E523 /* TestProjectViewControlleriPhone4.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,14 @@
 		80B8C5FF16872A8D0079E523 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		80B8C60116872A8D0079E523 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		80B8C60316872A8D0079E523 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		80B8C60A16872B0B0079E523 /* SocialFrameworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialFrameworkHelper.h; sourceTree = "<group>"; };
+		80B8C60B16872B0B0079E523 /* SocialFrameworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialFrameworkHelper.m; sourceTree = "<group>"; };
+		80B8C63816872D9C0079E523 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		80B8C63A16872DA30079E523 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		80B8C63C168745520079E523 /* TestProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestProjectViewController.h; sourceTree = "<group>"; };
+		80B8C63D168745520079E523 /* TestProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestProjectViewController.m; sourceTree = "<group>"; };
+		80B8C63E168745520079E523 /* TestProjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestProjectViewController.xib; sourceTree = "<group>"; };
+		80B8C64116874FC90079E523 /* TestProjectViewControlleriPhone4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestProjectViewControlleriPhone4.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B8C63B16872DA30079E523 /* Social.framework in Frameworks */,
+				80B8C63916872D9C0079E523 /* Twitter.framework in Frameworks */,
 				80B8C5EE16872A8D0079E523 /* UIKit.framework in Frameworks */,
 				80B8C5F016872A8D0079E523 /* Foundation.framework in Frameworks */,
 				80B8C5F216872A8D0079E523 /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +67,8 @@
 		80B8C5DE16872A8D0079E523 = {
 			isa = PBXGroup;
 			children = (
+				80B8C63A16872DA30079E523 /* Social.framework */,
+				80B8C63816872D9C0079E523 /* Twitter.framework */,
 				80B8C5F316872A8D0079E523 /* SocialFrameworkHelper */,
 				80B8C5EC16872A8D0079E523 /* Frameworks */,
 				80B8C5EA16872A8D0079E523 /* Products */,
@@ -80,6 +98,12 @@
 			children = (
 				80B8C5FC16872A8D0079E523 /* AppDelegate.h */,
 				80B8C5FD16872A8D0079E523 /* AppDelegate.m */,
+				80B8C60A16872B0B0079E523 /* SocialFrameworkHelper.h */,
+				80B8C60B16872B0B0079E523 /* SocialFrameworkHelper.m */,
+				80B8C63C168745520079E523 /* TestProjectViewController.h */,
+				80B8C63D168745520079E523 /* TestProjectViewController.m */,
+				80B8C64116874FC90079E523 /* TestProjectViewControlleriPhone4.xib */,
+				80B8C63E168745520079E523 /* TestProjectViewController.xib */,
 				80B8C5F416872A8D0079E523 /* Supporting Files */,
 			);
 			path = SocialFrameworkHelper;
@@ -154,6 +178,8 @@
 				80B8C60016872A8D0079E523 /* Default.png in Resources */,
 				80B8C60216872A8D0079E523 /* Default@2x.png in Resources */,
 				80B8C60416872A8D0079E523 /* Default-568h@2x.png in Resources */,
+				80B8C640168745520079E523 /* TestProjectViewController.xib in Resources */,
+				80B8C64216874FC90079E523 /* TestProjectViewControlleriPhone4.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +192,8 @@
 			files = (
 				80B8C5FA16872A8D0079E523 /* main.m in Sources */,
 				80B8C5FE16872A8D0079E523 /* AppDelegate.m in Sources */,
+				80B8C60C16872B0B0079E523 /* SocialFrameworkHelper.m in Sources */,
+				80B8C63F168745520079E523 /* TestProjectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +267,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialFrameworkHelper/SocialFrameworkHelper-Prefix.pch";
 				INFOPLIST_FILE = "SocialFrameworkHelper/SocialFrameworkHelper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -250,6 +279,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SocialFrameworkHelper/SocialFrameworkHelper-Prefix.pch";
 				INFOPLIST_FILE = "SocialFrameworkHelper/SocialFrameworkHelper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,6 +304,7 @@
 				80B8C60916872A8D0079E523 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
