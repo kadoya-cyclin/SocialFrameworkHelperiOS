@@ -26,7 +26,7 @@ How To Get Started
   
 How To Include It
 -------------
-+ Copy SocialFramework.h and SocialFramework.m into your Project.
++ Copy SocialFrameworkHelper.h and SocialFrameworkHelper.m into your Project.
   
 + Add following Frameworks to your project's Link Binary With Libraries build phase.  
         Twitter.framework (mark it optional, new in iOS6)  
