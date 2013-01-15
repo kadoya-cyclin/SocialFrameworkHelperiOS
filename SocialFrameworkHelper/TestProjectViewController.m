@@ -44,7 +44,7 @@
     }
     
     if (self) {
-        // Custom initialization
+        // Custom initialization...
         
     }
     return self;
@@ -87,18 +87,30 @@
 #pragma mark -- SocialFrameworkHelper Delegate --
 -(void)socialFWHTwitterPostCanceled:(SocialFrameworkHelper *)socialFrameworkHelper{
     NSLog(@"%s",__func__);
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 -(void)socialFWHTwitterPostDone:(SocialFrameworkHelper *)socialFrameworkHelper{
     NSLog(@"%s",__func__);
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 -(void)socialFWHFacebookPostCanceled:(SocialFrameworkHelper *)socialFrameworkHelper{
     NSLog(@"%s",__func__);
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 -(void)socialFWHFacebookPostDone:(SocialFrameworkHelper *)socialFrameworkHelper{
     NSLog(@"%s",__func__);
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 #pragma mark -- Outlets Actions --
